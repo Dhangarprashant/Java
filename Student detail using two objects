@@ -1,0 +1,40 @@
+class stu
+{	
+    int rollno;
+    String name;
+    int marks[];
+  
+  stu() //non paramitrized 
+  {
+      rollno =10;
+      name= "Prashant";
+      marks = new int[5];
+      for(int i=0;i<marks.length;i++)
+      {
+          marks[i] = 87;
+      }
+	}
+public void display()
+{
+    System.out.print("rollno - ");
+    System.out.println(rollno);
+    System.out.print("name - ");
+    System.out.println(name);
+    System.out.println("marks as follow");
+    for(int i= 0;i<marks.length;i++)
+    System.out.println(marks[i]);
+
+    System.out.println();
+}
+}
+public class Main
+{
+    public static void main (String[] args)
+    {
+        stu obj1 = new stu();
+        obj1.display();
+        
+        stu obj2 = new stu();
+        obj2.display();
+    }
+}
